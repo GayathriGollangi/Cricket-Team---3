@@ -58,7 +58,7 @@ public class PlayerJpaService implements PlayerRepository{
 		if(player.getPlayerName() != null){
 					newPlayer.setPlayerName(player.getPlayerName());
 				}
-		if(player.getJerseyNumber() != null){
+		if(player.getJerseyNumber() != 0){
 					newPlayer.setJerseyNumber(player.getJerseyNumber());
 				}
 		if(player.getRole() != null){
@@ -86,9 +86,5 @@ public class PlayerJpaService implements PlayerRepository{
 		
 	}
 
-	@Override
-	public Player getPlayerId(int playerId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 }
